@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="kareem_abdul_jabbar">Kareem Abdul-Jabbar</string>
+    <string name="wilt_chamberlin">Wilt Chamberlin</string>
+    <string name="kobe_bryant">Kobe Bryant</string>
+    <string name="karl_malone">Karl Malone</string>
+    <string name="magic_johnson">Magic Johnson</string>
+    <string name="steve_nash">Steve Nash</string>
+    <string name="jason_kidd">Jason Kidd</string>
+    <string name="john_stockson">John Stockson</string>
+    <string name="oscar_robertson">Oscar Robertson</string>
+    <string name="greg_maddux">Greg Maddux</string>
+    <string name="barry_sanders">Barry Sanders</string>
+    <string name="eric_dikerson">Eric Dikerson</string>
+    <string name="adrian_peterson">Adrian Peterson</string>
+    <string name="oj_simpson">OJ Simpson</string>
+    <string name="terrell_davis">Terrell Davis</string>
+    <string name="ladainian_tomilson">LaDainian Tomilson</string>
+    <string name="emmit_smith">Emmit Smith</string>
+    <string name="curtis_martin">Curtis Martin</string>
+    <string name="jim_brown">Jim Brown</string>
+    <string name="thurman_thomas">Thurman Thomas</string>
+    <string name="michael_jordan">Michael Jordan</string>
+    <string name="nolan_ryan">Nolan Ryan</string>
+    <string name="roger_clemens">Roger Clemens</string>
+    <string name="randy_johnson">Randy Johnson</string>
+    <string name="sports_quiz">Sports Quiz</string>
+    <string name="question_1_who_is_the_nfl_s_all_time_leading_rusher">Question 1: Who is the NFL\'s all-time leading rusher?</string>
+    <string name="question_2_who_holds_the_record_for_most_yards_gained_in_a_season_and_as_a_rookie">Question 2: Who holds the record for most yards gained in a season?</string>
+    <string name="question_3_who_is_the_nba_s_all_time_leading_scorer">Question 3: Who are the NBA\'s top two all-time leading scorers?</string>
+    <string name="question_4_who_is_the_nba_s_all_time_assists_leader">Question 4: Who is the NBA\'s all-time assists leader?</string>
+    <string name="question_5_who_is_mlb_s_baseball_all_time_strike_out_king">Question 5: Who is MLB\'s(Baseball) all-time strike out king?</string>
+    <string name="enter_your_name_below">Enter your name below</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="submit_answers">Submit Answers</string>
+</resources>
