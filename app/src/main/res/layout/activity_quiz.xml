@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
@@ -37,11 +37,12 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/rg_q1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp">
+            android:layout_marginRight="24dp"
+            android:padding="8dp">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -84,17 +85,18 @@
             android:layout_marginRight="18dp"
             android:background="@color/colorPrimary"
             android:padding="8dp"
-            android:text="@string/question_2_who_holds_the_record_for_most_yards_gained_in_a_season_and_as_a_rookie"
+            android:text="@string/question_2_who_holds_the_NFL_record_for_most_yards_gained_in_a_season"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/rg_q2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp">
+            android:layout_marginRight="24dp"
+            android:padding="8dp">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -130,6 +132,7 @@
         </RadioGroup>
 
         <TextView
+            android:id="@+id/check_box_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
@@ -142,16 +145,16 @@
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/Kareem_Abdul_Jabbar"
+            android:id="@+id/cb1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
             android:text="@string/kareem_abdul_jabbar" />
 
         <CheckBox
-            android:id="@+id/Wilt_Chamberlin"
+            android:id="@+id/cb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -159,7 +162,7 @@
             android:text="@string/wilt_chamberlin" />
 
         <CheckBox
-            android:id="@+id/Kobe_Bryant"
+            android:id="@+id/cb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -167,7 +170,7 @@
             android:text="@string/kobe_bryant" />
 
         <CheckBox
-            android:id="@+id/Michael_Jordan"
+            android:id="@+id/cb4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
@@ -175,7 +178,7 @@
             android:text="@string/michael_jordan" />
 
         <CheckBox
-            android:id="@+id/Karl_Malone"
+            android:id="@+id/cb5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -196,11 +199,12 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/rg_q3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp">
+            android:layout_marginRight="24dp"
+            android:padding="8dp">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -242,16 +246,17 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/rg_q4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp">
+            android:layout_marginRight="24dp"
+            android:padding="8dp">
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/greg_maddux"/>
+                android:text="@string/greg_maddux" />
 
             <RadioButton
                 android:id="@+id/question_5_correct"
@@ -293,15 +298,38 @@
             android:inputType="textCapWords"
             android:padding="8dp" />
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="32dp"
-            android:background="@color/colorPrimary"
-            android:onClick="submitAnswers"
-            android:padding="16dp"
-            android:text="@string/submit_answers" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="32dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:onClick="submitAnswers"
+                android:padding="16dp"
+                android:text="@string/submit_answers" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="32dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:onClick="Reset"
+                android:padding="16dp"
+                android:text="@string/reset_quiz" />
+
+
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
