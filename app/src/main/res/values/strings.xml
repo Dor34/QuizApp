@@ -34,4 +34,9 @@
     <string name="enter_your_name">Enter Your Name</string>
     <string name="submit_answers">Submit Answers</string>
     <string name="reset_quiz">Reset and Try Again</string>
+    <string name="question_6_who_is_the_nhl_s_all_time_points_leader">Question 6: Who is the NHL\'s all-time points leader?</string>
+    <string name="wayne_gretzky">Wayne Gretzky</string>
+    <string name="mark_messier">Mark Messier</string>
+    <string name="alexander_ovechkin">Alexander Ovechkin</string>
+    <string name="sidney_crosby">Sidney Crosby</string>
 </resources>

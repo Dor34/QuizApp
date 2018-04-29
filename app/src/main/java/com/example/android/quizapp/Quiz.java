@@ -22,9 +22,6 @@ public class Quiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_quiz);
-        //Boolean Variable to distinguish between true (submitted) and false (not submitted).
-        boolean isSubmitted = false;
-
 
     }
 
@@ -91,7 +88,6 @@ public class Quiz extends AppCompatActivity {
 
     /**
      * Method to record correct answer for question 5.
-     * Any answer will be deemed correct.
      */
     public void questionFive() {
 
@@ -102,6 +98,17 @@ public class Quiz extends AppCompatActivity {
         }
     }
 
+    /**
+     * Method to record correct answer for question 6.
+     */
+    public void questionSix () {
+
+        RadioButton rbTwo = findViewById (R.id.question_6_correct);
+
+        if (rbTwo.isChecked ()) {
+            correct++;
+        }
+    }
     /**
      * Compile answers.
      */
@@ -125,20 +132,22 @@ public class Quiz extends AppCompatActivity {
             questionThree ();
             questionFour ();
             questionFive ();
+            questionSix ();
             isSubmitted = true;
         }
         EditText userName = findViewById (R.id.name_text_input);
         String name = userName.getText ().toString ();
-        String resultsMessage = name + ", You got " + correct + " out of 5 answers correct.";
+        String resultsMessage = name + ", You got " + correct + " out of 6 answers correct.";
         Toast.makeText (this, resultsMessage, Toast.LENGTH_LONG).show ();
     }
 
     /**
-     * When clicked this method will reset the radio buttons in quiz to none selected
+     * When clicked this method will reset the quiz
      */
     public void Reset(View view) {
         correct = 0;
 
+        //resets radio buttons on quiz
         RadioGroup rg_q1 = findViewById (R.id.rg_q1);
         rg_q1.clearCheck ();
         RadioGroup rg_q2 = findViewById (R.id.rg_q2);
@@ -147,6 +156,31 @@ public class Quiz extends AppCompatActivity {
         rg_q3.clearCheck ();
         RadioGroup rg_q4 = findViewById (R.id.rg_q4);
         rg_q4.clearCheck ();
+        RadioGroup rg_q5 = findViewById (R.id.rg_q5);
+        rg_q5.clearCheck ();
     }
 
+    //clears checkboxes
+    public void check_box_group () {
+        CheckBox cb1 = findViewById(R.id.cb1);
+        if (cb1.isChecked ()) {
+            cb1.setChecked (false);
+        }
+        CheckBox cb2 = findViewById(R.id.cb2);
+        if (cb2.isChecked ()) {
+            cb2.setChecked (false);
+        }
+        CheckBox cb3 = findViewById(R.id.cb3);
+        if (cb3.isChecked()) {
+            cb3.setChecked (false);
+        }
+        CheckBox cb4 = findViewById(R.id.cb4);
+        if(cb4.isChecked ()) {
+            cb4.setChecked (false);
+        }
+        CheckBox cb5 = findViewById(R.id.cb5);
+        if (cb5.isChecked ()) {
+            cb5.setChecked (false);
+        }
+    }
 }

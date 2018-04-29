@@ -282,6 +282,48 @@
             android:layout_marginRight="18dp"
             android:background="@color/colorPrimary"
             android:padding="8dp"
+            android:text="@string/question_6_who_is_the_nhl_s_all_time_points_leader"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_q5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:padding="8dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/alexander_ovechkin" />
+
+            <RadioButton
+                android:id="@+id/question_6_correct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/wayne_gretzky" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mark_messier" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sidney_crosby" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
             android:text="@string/enter_your_name_below"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
