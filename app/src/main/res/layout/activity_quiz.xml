@@ -57,7 +57,7 @@
                 android:text="@string/curtis_martin" />
 
             <RadioButton
-                android:id="@+id/question_1_correct"
+                android:id="@+id/question_1_correct_rb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="4dp"
@@ -105,7 +105,7 @@
                 android:text="@string/thurman_thomas" />
 
             <RadioButton
-                android:id="@+id/question_2_correct"
+                android:id="@+id/question_2_correct_rb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="4dp"
@@ -212,7 +212,7 @@
                 android:text="@string/oscar_robertson" />
 
             <RadioButton
-                android:id="@+id/question_4_correct"
+                android:id="@+id/question_4_correct_rb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/john_stockson" />
@@ -240,7 +240,30 @@
             android:layout_marginRight="18dp"
             android:background="@color/colorPrimary"
             android:padding="8dp"
-            android:text="@string/question_5_who_is_mlb_s_baseball_all_time_strike_out_king"
+            android:text="@string/question_5_which_soccer_team_has_won_the_most_champions_league_titles"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/your_answer"
+            android:inputType="textCapWords"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:text="@string/question_6_who_is_mlb_s_baseball_all_time_strike_out_king"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -259,7 +282,7 @@
                 android:text="@string/greg_maddux" />
 
             <RadioButton
-                android:id="@+id/question_5_correct"
+                android:id="@+id/question_6_correct_rb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/nolan_ryan" />
@@ -282,7 +305,7 @@
             android:layout_marginRight="18dp"
             android:background="@color/colorPrimary"
             android:padding="8dp"
-            android:text="@string/question_6_who_is_the_nhl_s_all_time_points_leader"
+            android:text="@string/question_7_who_is_the_nhl_s_all_time_points_leader"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -301,7 +324,7 @@
                 android:text="@string/alexander_ovechkin" />
 
             <RadioButton
-                android:id="@+id/question_6_correct"
+                android:id="@+id/question_7_correct_rb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/wayne_gretzky" />
@@ -316,6 +339,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/sidney_crosby" />
         </RadioGroup>
+
 
         <TextView
             android:layout_width="wrap_content"

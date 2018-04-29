@@ -31,7 +31,7 @@ public class Quiz extends AppCompatActivity {
      */
     public void questionOne() {
 
-        RadioButton rbThree = findViewById (R.id.question_1_correct);
+        RadioButton rbThree = findViewById (R.id.question_1_correct_rb);
 
         if (rbThree.isChecked ()) {
             correct++;
@@ -43,7 +43,7 @@ public class Quiz extends AppCompatActivity {
      */
     public void questionTwo() {
 
-        RadioButton rbTwo = findViewById (R.id.question_2_correct);
+        RadioButton rbTwo = findViewById (R.id.question_2_correct_rb);
 
         if (rbTwo.isChecked ()) {
             correct++;
@@ -79,7 +79,7 @@ public class Quiz extends AppCompatActivity {
      */
     public void questionFour() {
 
-        RadioButton rbTwo = findViewById (R.id.question_4_correct);
+        RadioButton rbTwo = findViewById (R.id.question_4_correct_rb);
 
         if (rbTwo.isChecked ()) {
             correct++;
@@ -88,10 +88,20 @@ public class Quiz extends AppCompatActivity {
 
     /**
      * Method to record correct answer for question 5.
-     */
-    public void questionFive() {
+    */
+    public void questionFive () {
 
-        RadioButton rbTwo = findViewById (R.id.question_5_correct);
+        EditText editText = findViewById(R.id.input_answer);
+        editText.setText(R.string.ac_milan);
+        correct++;
+    }
+
+    /**
+     * Method to record correct answer for question 6.
+     */
+    public void questionSix() {
+
+        RadioButton rbTwo = findViewById (R.id.question_6_correct_rb);
 
         if (rbTwo.isChecked ()) {
             correct++;
@@ -99,16 +109,19 @@ public class Quiz extends AppCompatActivity {
     }
 
     /**
-     * Method to record correct answer for question 6.
+     * Method to record correct answer for question 7.
      */
-    public void questionSix () {
+    public void questionSeven () {
 
-        RadioButton rbTwo = findViewById (R.id.question_6_correct);
+        RadioButton rbTwo = findViewById (R.id.question_7_correct_rb);
 
         if (rbTwo.isChecked ()) {
             correct++;
         }
     }
+
+
+
     /**
      * Compile answers.
      */
@@ -133,11 +146,12 @@ public class Quiz extends AppCompatActivity {
             questionFour ();
             questionFive ();
             questionSix ();
+            questionSeven ();
             isSubmitted = true;
         }
         EditText userName = findViewById (R.id.name_text_input);
         String name = userName.getText ().toString ();
-        String resultsMessage = name + ", You got " + correct + " out of 6 answers correct.";
+        String resultsMessage = name + ", You got " + correct + " out of 7 answers correct.";
         Toast.makeText (this, resultsMessage, Toast.LENGTH_LONG).show ();
     }
 
@@ -146,8 +160,16 @@ public class Quiz extends AppCompatActivity {
      */
     public void Reset(View view) {
         correct = 0;
+        check_box_group();
 
-        //resets radio buttons on quiz
+        //sets edit text back to default
+        EditText question5 = findViewById(R.id.input_answer);
+        question5.setText("");
+
+        EditText userName = findViewById(R.id.name_text_input);
+        userName.setText("");
+
+        //clears radio buttons on quiz
         RadioGroup rg_q1 = findViewById (R.id.rg_q1);
         rg_q1.clearCheck ();
         RadioGroup rg_q2 = findViewById (R.id.rg_q2);
@@ -160,7 +182,7 @@ public class Quiz extends AppCompatActivity {
         rg_q5.clearCheck ();
     }
 
-    //clears checkboxes
+        //clears checkboxes
     public void check_box_group () {
         CheckBox cb1 = findViewById(R.id.cb1);
         if (cb1.isChecked ()) {

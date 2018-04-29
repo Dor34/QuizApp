@@ -29,14 +29,17 @@
     <string name="question_2_who_holds_the_NFL_record_for_most_yards_gained_in_a_season">Question 2: Who holds the NFL record for most yards gained in a season?</string>
     <string name="question_3_who_is_the_nba_s_all_time_leading_scorer">Question 3: Who are the NBA\'s top two all-time leading scorers?</string>
     <string name="question_4_who_is_the_nba_s_all_time_assists_leader">Question 4: Who is the NBA\'s all-time assists leader?</string>
-    <string name="question_5_who_is_mlb_s_baseball_all_time_strike_out_king">Question 5: Who is MLB\'s(Baseball) all-time strike out king?</string>
+    <string name="question_6_who_is_mlb_s_baseball_all_time_strike_out_king">Question 6: Who is MLB\'s(Baseball) all-time strike out king?</string>
     <string name="enter_your_name_below">Enter your name below</string>
     <string name="enter_your_name">Enter Your Name</string>
     <string name="submit_answers">Submit Answers</string>
     <string name="reset_quiz">Reset and Try Again</string>
-    <string name="question_6_who_is_the_nhl_s_all_time_points_leader">Question 6: Who is the NHL\'s all-time points leader?</string>
+    <string name="question_7_who_is_the_nhl_s_all_time_points_leader">Question 7: Who is the NHL\'s all-time points leader?</string>
     <string name="wayne_gretzky">Wayne Gretzky</string>
     <string name="mark_messier">Mark Messier</string>
     <string name="alexander_ovechkin">Alexander Ovechkin</string>
     <string name="sidney_crosby">Sidney Crosby</string>
+    <string name="question_5_which_soccer_team_has_won_the_most_champions_league_titles">Question 5: Which soccer team has won the most Champions League titles?</string>
+    <string name="your_answer">Your answer</string>
+    <string name="ac_milan">AC Milan</string>
 </resources>
