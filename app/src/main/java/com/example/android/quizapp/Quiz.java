@@ -15,6 +15,9 @@ public class Quiz extends AppCompatActivity {
      * Variable to hold the amount of correct answers.
      */
     int correct = 0;
+    /**
+     * 
+     */
     private boolean isSubmitted;
 
 
@@ -91,9 +94,8 @@ public class Quiz extends AppCompatActivity {
     */
     public void questionFive () {
 
-        EditText editText = findViewById(R.id.input_answer);
-        editText.setText(R.string.ac_milan);
-        correct++;
+        EditText editText =  findViewById(R.id.question5_answer);
+        String name = editText.getText().toString();
     }
 
     /**
@@ -153,17 +155,21 @@ public class Quiz extends AppCompatActivity {
         String name = userName.getText ().toString ();
         String resultsMessage = name + ", You got " + correct + " out of 7 answers correct.";
         Toast.makeText (this, resultsMessage, Toast.LENGTH_LONG).show ();
+        correct = 0;
+
     }
 
     /**
      * When clicked this method will reset the quiz
      */
     public void Reset(View view) {
-        correct = 0;
+        //resets entire quiz
+        correct=0;
         check_box_group();
 
+
         //sets edit text back to default
-        EditText question5 = findViewById(R.id.input_answer);
+        EditText question5 = findViewById(R.id.question5_answer);
         question5.setText("");
 
         EditText userName = findViewById(R.id.name_text_input);

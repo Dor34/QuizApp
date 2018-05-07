@@ -40,6 +40,5 @@
     <string name="alexander_ovechkin">Alexander Ovechkin</string>
     <string name="sidney_crosby">Sidney Crosby</string>
     <string name="question_5_which_soccer_team_has_won_the_most_champions_league_titles">Question 5: Which soccer team has won the most Champions League titles?</string>
-    <string name="your_answer">Your answer</string>
-    <string name="ac_milan">AC Milan</string>
+    <string name="answer">AC Milan</string>
 </resources>
