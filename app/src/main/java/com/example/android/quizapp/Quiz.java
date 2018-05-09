@@ -1,8 +1,10 @@
 package com.example.android.quizapp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -20,7 +22,6 @@ public class Quiz extends AppCompatActivity {
      */
     private boolean isSubmitted;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
@@ -28,6 +29,13 @@ public class Quiz extends AppCompatActivity {
 
     }
 
+    public void showSoftKeyboard(View view) {
+        if (view.requestFocus()) {
+            InputMethodManager imm = (InputMethodManager)
+                    getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.showSoftInput(view, InputMethodManager.SHOW_IMPLICIT);
+        }
+    }
 
     /**
      * Method to record correct answer for question 1.
@@ -82,7 +90,7 @@ public class Quiz extends AppCompatActivity {
      */
     public void questionFour() {
 
-        RadioButton rbTwo = findViewById (R.id.question_4_correct_rb);
+        RadioButton rbTwo = findViewById (R.id.question_4_correct);
 
         if (rbTwo.isChecked ()) {
             correct++;
@@ -94,8 +102,11 @@ public class Quiz extends AppCompatActivity {
     */
     public void questionFive () {
 
-        EditText editText =  findViewById(R.id.question5_answer);
-        String name = editText.getText().toString();
+        EditText editText =  findViewById(R.id.question_5_correct);
+        String answer = editText.getText().toString();
+        if (answer.equalsIgnoreCase ("Ac Milan")){
+            correct++;
+        }
     }
 
     /**
@@ -103,7 +114,7 @@ public class Quiz extends AppCompatActivity {
      */
     public void questionSix() {
 
-        RadioButton rbTwo = findViewById (R.id.question_6_correct_rb);
+        RadioButton rbTwo = findViewById (R.id.question_6_correct);
 
         if (rbTwo.isChecked ()) {
             correct++;
@@ -115,7 +126,7 @@ public class Quiz extends AppCompatActivity {
      */
     public void questionSeven () {
 
-        RadioButton rbTwo = findViewById (R.id.question_7_correct_rb);
+        RadioButton rbTwo = findViewById (R.id.question_7_correct);
 
         if (rbTwo.isChecked ()) {
             correct++;
@@ -149,7 +160,7 @@ public class Quiz extends AppCompatActivity {
             questionFive ();
             questionSix ();
             questionSeven ();
-            isSubmitted = true;
+            isSubmitted = false;
         }
         EditText userName = findViewById (R.id.name_text_input);
         String name = userName.getText ().toString ();
@@ -169,7 +180,7 @@ public class Quiz extends AppCompatActivity {
 
 
         //sets edit text back to default
-        EditText question5 = findViewById(R.id.question5_answer);
+        EditText question5 = findViewById(R.id.question_5_correct);
         question5.setText("");
 
         EditText userName = findViewById(R.id.name_text_input);

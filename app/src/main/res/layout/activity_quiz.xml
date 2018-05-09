@@ -212,7 +212,7 @@
                 android:text="@string/oscar_robertson" />
 
             <RadioButton
-                android:id="@+id/question_4_correct_rb"
+                android:id="@+id/question_4_correct"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/john_stockson" />
@@ -246,7 +246,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/question5_answer"
+            android:id="@+id/question_5_correct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
@@ -282,7 +282,7 @@
                 android:text="@string/greg_maddux" />
 
             <RadioButton
-                android:id="@+id/question_6_correct_rb"
+                android:id="@+id/question_6_correct"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/nolan_ryan" />
@@ -324,7 +324,7 @@
                 android:text="@string/alexander_ovechkin" />
 
             <RadioButton
-                android:id="@+id/question_7_correct_rb"
+                android:id="@+id/question_7_correct"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/wayne_gretzky" />
